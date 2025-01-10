@@ -81,14 +81,14 @@ Proyek ini menyediakan halaman web untuk menampilkan jadwal shalat berdasarkan l
 - **Akurasi Lokasi:** Pastikan koordinat kota telah dimasukkan dengan benar.
 
 ---
-Cara Menggunakan
+**Cara Menggunakan**
 1) Akses Langsung Melalui Browser
 2) Anda juga dapat mengakses jadwal shalat secara online melalui browser dengan menambahkan parameter kota pada URL. Gunakan format berikut:
 
-FORMAT:
-/?city=Kota+Semarang
-Contoh: Jika Anda ingin melihat jadwal shalat untuk Kota Semarang, cukup akses: http://localhost/?city=Kota+Semarang
-Link riil: https://lppapwajateng.org/shalatmu/?city=Kota+Semarang
+**FORMAT:**
+_**/?city=Kota+Semarang**_.
+**Contoh:** Jika Anda ingin melihat jadwal shalat untuk Kota Semarang, cukup akses: **http://localhost/?city=Kota+Semarang**
+**Link riil:** https://lppapwajateng.org/shalatmu/?city=Kota+Semarang
 
 ---
 
