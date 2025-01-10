@@ -11,7 +11,7 @@ Proyek ini menyediakan halaman web untuk menampilkan jadwal shalat berdasarkan l
 2. **Jadwal Shalat Otomatis:**
    - Waktu shalat dihitung menggunakan algoritma dari **PrayTimes.js**.
    - Metode yang digunakan adalah `Muhammadiyah (MU)` dengan penyesuaian untuk waktu shubuh.
-   - Kode: _**var PT = new PrayTimes('MU'); **_
+   - Kode: _*var PT = new PrayTimes('MU'); *_
 
 3. **Tampilan Dinamis:**
    - Tabel waktu shalat dibuat secara dinamis menggunakan JavaScript.
