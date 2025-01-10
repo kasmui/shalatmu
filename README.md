@@ -60,7 +60,7 @@ Proyek ini menyediakan halaman web untuk menampilkan jadwal shalat berdasarkan l
 
 1. **Persyaratan:**
    - Server lokal dengan dukungan PHP.
-   - File `PrayTimes.js` (dapat diunduh dari [PrayTimes](http://praytimes.org/wiki/Code)).
+   - File `PrayTimes.js` (dapat diunduh dari [PrayTimes](https://falakmu.id/PrayTimes.js)).
 
 2. **Langkah-langkah:**
    - Unduh semua file proyek dan tempatkan di server lokal.
@@ -78,7 +78,7 @@ Proyek ini menyediakan halaman web untuk menampilkan jadwal shalat berdasarkan l
 
 ## Catatan Penting
 
-- **Standar Waktu Shubuh:** Penyesuaian waktu shubuh mengikuti keputusan **Majelis Tarjih Muhammadiyah**, berbeda dengan standar default pada PrayTimes.js.
+- **Standar Waktu Shubuh:** Penyesuaian waktu shubuh mengikuti keputusan **Majelis Tarjih Muhammadiyah**, yaitu ditambah 8 menit, berbeda dengan standar default pada PrayTimes.js.
 - **Akurasi Lokasi:** Pastikan koordinat kota telah dimasukkan dengan benar.
 
 ---
