@@ -76,7 +76,7 @@
         <form method="get" action="" id="cityForm">
             <label for="city" style="color: darkgreen;">Pilih Kota:</label>
             <select style="background-color: #e6ffe6;" name="city" id="city" class="city-selector" onchange="document.getElementById('cityForm').submit()">
-                <option value="Kota Semarang" <?= isset($_GET['city']) && $_GET['city'] == 'Kota Semarang' ? 'selected' : '' ?>>Kota Semarang</option>
+                <option value="Kota Semarang" <?= !isset($_GET['city']) || $_GET['city'] == 'Kota Semarang' ? 'selected' : '' ?>>Kota Semarang</option>
                 <option value="Kabupaten Kendal" <?= isset($_GET['city']) && $_GET['city'] == 'Kabupaten Kendal' ? 'selected' : '' ?>>Kabupaten Kendal</option>
                 <option value="Kota Magelang" <?= isset($_GET['city']) && $_GET['city'] == 'Kota Magelang' ? 'selected' : '' ?>>Kota Magelang</option>
                 <option value="Kota Pekalongan" <?= isset($_GET['city']) && $_GET['city'] == 'Kota Pekalongan' ? 'selected' : '' ?>>Kota Pekalongan</option>
@@ -204,9 +204,9 @@
         ];
 
 
-    // Tangkap kota dari parameter GET, default ke Semarang
-    $selected_city = isset($_GET['city']) && array_key_exists($_GET['city'], $coordinates) ? $_GET['city'] : 'Semarang';
-
+    // Tangkap kota dari parameter GET, default ke Kota Semarang
+    $selected_city = isset($_GET['city']) && array_key_exists($_GET['city'], $coordinates) ? $_GET['city'] : 'Kota Semarang';
+    
     // Ambil koordinat berdasarkan kota yang dipilih
     $latlon = $coordinates[$selected_city];
     ?>
