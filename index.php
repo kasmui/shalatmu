@@ -13,11 +13,13 @@
             margin: 20px;
         }
         .jadwal-table {
-            width: 100%;
+            width: 700px;
             border-collapse: collapse;
             margin: 20px 0;
+            text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        
         .jadwal-table th {
             border: 1px solid #ddd;
             padding: 10px;
@@ -25,7 +27,7 @@
         }
         .jadwal-table th {
             background-color: #f4f4f4;
-            font-size: 20px;
+            font-size: 40px;
         }
         
         .jadwal-table td {
@@ -33,7 +35,7 @@
             padding: 10px;
             text-align: center;
             color: blue;
-            font-size: 20px;
+            font-size: 40px;
         }        
         
         .center {
@@ -58,7 +60,12 @@
             color: #000;
         }
     </style>
-    
+    <style>
+        .center-table {
+            display: flex;
+            justify-content: center; /* Untuk memusatkan secara horizontal */
+        }
+    </style>    
 </head>
 <body>
     <div class="center">
@@ -217,36 +224,39 @@
 
         // Generate tabel waktu shalat
         var jadwalTable = `
-            <table class="jadwal-table">
-                <thead>
-                    <tr>
-                        <th style="background-color: #ffccff;">Shalat</th>
-                        <th style="background-color: #ffffb3;">Waktu</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="background-color: #ffe6ff;">Shubuh</td>
-                        <td style="background-color: #ffffe6;">${prayertimes[list[0].toLowerCase()]}</td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #ffe6ff;">Dhuhur</td>
-                        <td style="background-color: #ffffe6;">${prayertimes[list[1].toLowerCase()]}</td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #ffe6ff;">Ashar</td>
-                        <td style="background-color: #ffffe6;">${prayertimes[list[2].toLowerCase()]}</td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #ffe6ff;">Maghrib</td>
-                        <td style="background-color: #ffffe6;">${prayertimes[list[3].toLowerCase()]}</td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #ffe6ff;">Isya</td>
-                        <td style="background-color: #ffffe6;">${prayertimes[list[4].toLowerCase()]}</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="center-table">
+                <table class="jadwal-table">
+                    <thead>
+                        <tr>
+                            <th style="background-color: #ffccff;">Shalat</th>
+                            <th style="background-color: #ffffb3;">Waktu (UTC+7)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="background-color: #ffe6ff;">Shubuh</td>
+                            <td style="background-color: #ffffe6;">${prayertimes[list[0].toLowerCase()]}</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffe6ff;">Dhuhur</td>
+                            <td style="background-color: #ffffe6;">${prayertimes[list[1].toLowerCase()]}</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffe6ff;">Ashar</td>
+                            <td style="background-color: #ffffe6;">${prayertimes[list[2].toLowerCase()]}</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffe6ff;">Maghrib</td>
+                            <td style="background-color: #ffffe6;">${prayertimes[list[3].toLowerCase()]}</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ffe6ff;">Isya</td>
+                            <td style="background-color: #ffffe6;">${prayertimes[list[4].toLowerCase()]}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="font-size: 15px; color: darkblue; text-align: center;">*) Sesuai keputusan MTT PP Muhammadiyah</div>
         `;
 
         // Tampilkan tabel
