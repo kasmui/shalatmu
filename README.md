@@ -91,5 +91,6 @@ _**/?city=Kota+Semarang**_.
 **Link riil:** https://lppapwajateng.org/shalatmu/?city=Kota+Semarang
 
 ---
-
+Gambar: https://github.com/kasmui/shalatmu/blob/main/shalatmu.PNG
+---
 Proyek ini memberikan solusi sederhana namun efektif untuk kebutuhan jadwal shalat yang dapat disesuaikan dengan lokasi pengguna. Jika Anda memiliki saran atau ingin berkontribusi, silakan kirimkan pull request.
